@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Check - Krishi Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🌾 Krishi Calculator</h1>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="profit.html">💰 Profit</a>
+        <a href="seed.html">🌱 Seed</a>
+        <a href="water.html">💧 Water</a>
+        <a href="weather.html">🌦️ Weather</a>
+        <a href="schemes.html">📚 Schemes</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div style="text-align:center;">
+        <div style="font-size:70px; margin-bottom:5px;">🌦️</div>
+        <h2>Weather Forecast</h2>
+        <p style="color:#666; font-size:14px; margin-bottom:25px;">Check your village weather + get spray alert</p>
+    </div>
+
+    <label style="font-weight:600; color:#ef6c00; font-size:14px;">🏡 Enter Your Village Name</label>
+    <input type="text" id="village" placeholder="Ex: Mandya, Mysore, Hassan">
+
+    <button onclick="checkWeather()" style="background:linear-gradient(90deg, #ef6c00, #ff9800);">Check Weather Now →</button>
+
+    <div id="result" class="result" style="display:none; border-left-color:#ef6c00; background:linear-gradient(135deg, #fff3e0, #ffe0b2); color:#e65100;"></div>
+
+    <div style="margin-top:25px; background:linear-gradient(135deg, #fff3e0, #ffcc80); padding:15px; border-radius:12px; font-size:13px; border-left:5px solid #ef6c00;">
+        <b style="color:#e65100;">⚠️ Spray Alert Rule:</b><br>
+        <span style="color:#333; font-weight:400;">Never spray pesticide if rain expected in next 6 hours. Best time: Early morning 6-9 AM. Check weather before every spray.</span>
+    </div>
+
+    <div style="margin-top:15px; display:grid; grid-template-columns:1fr 1fr; gap:10px; text-align:center;">
+        <div style="background:#e8f5e9; padding:12px; border-radius:10px;"><div style="font-size:24px;">🌡️</div><p style="font-size:12px; margin-top:5px;">Temp: 27°C</p></div>
+        <div style="background:#e3f2fd; padding:12px; border-radius:10px;"><div style="font-size:24px;">💨</div><p style="font-size:12px; margin-top:5px;">Wind: Normal</p></div>
+    </div>
+
+    <div style="margin-top:15px; text-align:center;">
+        <a href="index.html" style="color:#ef6c00; text-decoration:none; font-size:14px; font-weight:600;">← Back to Home</a>
+    </div>
+</div>
+
+<footer style="background:#1b5e20; color:white; text-align:center; padding:15px; margin-top:30px; font-size:13px;">
+    🌾 Krishi Calculator | Village Weather Alert
+</footer>
+
+<script src="js/weather.js"></script>
+</body>
+</html>

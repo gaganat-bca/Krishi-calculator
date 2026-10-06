@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seed Calculator - Krishi Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🌾 Krishi Calculator</h1>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="profit.html">💰 Profit</a>
+        <a href="seed.html">🌱 Seed</a>
+        <a href="water.html">💧 Water</a>
+        <a href="weather.html">🌦️ Weather</a>
+        <a href="schemes.html">📚 Schemes</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div style="text-align:center;">
+        <div style="font-size:70px; margin-bottom:5px;">🌱</div>
+        <h2>Seed Calculator</h2>
+        <p style="color:#666; font-size:14px; margin-bottom:25px;">Get exact seed quantity - no waste, save money</p>
+    </div>
+
+    <label style="font-weight:600; color:#2e7d32; font-size:14px;">🌾 Select Your Crop</label>
+    <select id="crop">
+        <option value="8">Ragi - 8kg / acre (Karnataka Special)</option>
+        <option value="0.2">Tomato - 200g / acre (High Profit)</option>
+        <option value="20">Rice - 20kg / acre (High Water)</option>
+        <option value="10">Maize - 10kg / acre (Jola)</option>
+        <option value="60">Groundnut - 60kg / acre (Shenga)</option>
+    </select>
+
+    <label style="font-weight:600; color:#2e7d32; font-size:14px; margin-top:10px; display:block;">📏 Enter Your Land Size</label>
+    <input type="number" id="acre" placeholder="Ex: 2.5 acres">
+
+    <button onclick="calcSeed()">Calculate Seed Needed →</button>
+
+    <div id="result" class="result" style="display:none"></div>
+
+    <div style="margin-top:25px; background:linear-gradient(135deg, #e8f5e9, #c8e6c9); padding:15px; border-radius:12px; font-size:13px; border-left:5px solid #2e7d32;">
+        <b style="color:#1b5e20;">🌿 Farmer Tip:</b><br>
+        <span style="color:#333; font-weight:400;">For hybrid seeds, use 20% less. Always buy certified seeds from Raitha Samparka Kendra.</span>
+    </div>
+
+    <div style="margin-top:15px; text-align:center;">
+        <a href="index.html" style="color:#2e7d32; text-decoration:none; font-size:14px; font-weight:600;">← Back to Home</a>
+    </div>
+</div>
+
+<footer style="background:#1b5e20; color:white; text-align:center; padding:15px; margin-top:30px; font-size:13px;">
+    🌾 Krishi Calculator | Smart Seed Calculator for Farmers
+</footer>
+
+<script src="js/seed.js"></script>
+</body>
+</html>

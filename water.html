@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Calculator - Krishi Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🌾 Krishi Calculator</h1>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="profit.html">💰 Profit</a>
+        <a href="seed.html">🌱 Seed</a>
+        <a href="water.html">💧 Water</a>
+        <a href="weather.html">🌦️ Weather</a>
+        <a href="schemes.html">📚 Schemes</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div style="text-align:center;">
+        <div style="font-size:70px; margin-bottom:5px;">💧</div>
+        <h2>Water Calculator</h2>
+        <p style="color:#666; font-size:14px; margin-bottom:25px;">Calculate daily water need - save water, save bill</p>
+    </div>
+
+    <label style="font-weight:600; color:#1565c0; font-size:14px;">💦 Select Crop Water Need</label>
+    <select id="cropWater">
+        <option value="400">Ragi - Low Need (400L / day / acre) ⭐ Save Water</option>
+        <option value="800">Tomato - Medium (800L / day / acre)</option>
+        <option value="1200">Rice - High Need (1200L / day / acre)</option>
+        <option value="600">Maize - Medium (600L / day / acre)</option>
+        <option value="500">Groundnut - Low (500L / day / acre)</option>
+    </select>
+
+    <label style="font-weight:600; color:#1565c0; font-size:14px; margin-top:10px; display:block;">📏 Enter Your Land Size</label>
+    <input type="number" id="waterAcre" placeholder="Ex: 3 acres">
+
+    <button onclick="calcWater()" style="background:linear-gradient(90deg, #1565c0, #1e88e5);">Calculate Water Needed →</button>
+
+    <div id="result" class="result" style="display:none; border-left-color:#1565c0; background:linear-gradient(135deg, #e3f2fd, #bbdefb); color:#0d47a1;"></div>
+
+    <div style="margin-top:25px; background:linear-gradient(135deg, #e3f2fd, #90caf9); padding:15px; border-radius:12px; font-size:13px; border-left:5px solid #1565c0;">
+        <b style="color:#0d47a1;">💧 Save Water Tip:</b><br>
+        <span style="color:#333; font-weight:400;">Use Drip Irrigation - Save 50% water + Govt subsidy available under PM Krishi Sinchayee Yojana. Apply at Raitha Kendra.</span>
+    </div>
+
+    <div style="margin-top:15px; text-align:center;">
+        <a href="index.html" style="color:#1565c0; text-decoration:none; font-size:14px; font-weight:600;">← Back to Home</a>
+    </div>
+</div>
+
+<footer style="background:#1b5e20; color:white; text-align:center; padding:15px; margin-top:30px; font-size:13px;">
+    🌾 Krishi Calculator | Smart Water Management
+</footer>
+
+<script src="js/water.js"></script>
+</body>
+</html>
